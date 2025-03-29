@@ -151,3 +151,23 @@ body {
 #amenties span {
     margin-right: 1vw;
 }
+
+.background-con nav {
+    position: absolute;
+    bottom: -30vh; 
+    right: 3vw; 
+}
+
+.background-con nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(193, 176, 134);
+    border: 0.1vw solid white;
+    padding: 0.5vw 1vw;
+    border-radius: 3vw;
+    box-shadow: 0.2vw 1.5vw 2vw rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
