@@ -103,3 +103,29 @@ body {
     justify-content: center; 
     border: 0.2vw solid rgb(193, 176, 134);
 }
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    width: 50vw;
+    max-width: 30vw;  
+    background: rgba(63, 156, 193, 0.7);
+    color: white;
+    padding: 2vw;
+    border-radius: 2vw;
+    border: 0.2vw solid rgb(193, 176, 134);
+    box-shadow: 0.2vw 1.5vw 2vw rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    opacity: 0.3;
+    height: auto;
+    margin-top: 65vh;
+    margin-left: 50%;
+}
+
+.overlay-text:hover {
+    opacity: 1;
+    background-color: rgba(63, 156, 193, 0.8);
+}
