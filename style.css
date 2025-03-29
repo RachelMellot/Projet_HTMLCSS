@@ -129,3 +129,25 @@ body {
     opacity: 1;
     background-color: rgba(63, 156, 193, 0.8);
 }
+
+.sous-titre-amt {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.texte-amt {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    font-size: 12px;
+    width: 100%;
+}
+
+#amenties span {
+    margin-right: 1vw;
+}
