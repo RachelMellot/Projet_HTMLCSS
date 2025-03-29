@@ -41,6 +41,10 @@ body {
     width: 60%;
     color: white;
 }
+#accueil header nav a:hover {
+    color: #c1b086; 
+    transition: color 0.3s ease-in-out; 
+}
 
 #accueil h1 {
     position: relative;
