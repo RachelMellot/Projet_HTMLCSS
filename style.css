@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section Accueil */
+
+#accueil {
+    background: url(images/home1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+#accueil header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.logo img {
+    height: 30px;
+}
+#accueil header nav{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#accueil header nav a{
+    text-decoration: none;
+    text-align: center;
+    width: 60%;
+    color: white;
+}
+
+#accueil h1 {
+    position: relative;
+    margin-left: 15%;
+    margin-top: 15%;
+    padding: 20px;
+    font-family: 'Roboto Slab',serif;
+    font-size: 350%;
+    font-style: normal;
+    color: white;
+    z-index: 1;
+}
+
+#accueil div h1::after {
+    content: "H"; /* Lettre en arrière-plan */
+    position: absolute;
+    transform: translate(-46vh, -30vh); /* Centrage */
+    font-size: 50vh; /* Taille de la lettre */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2); /* Blanc transparent */
+    z-index: 0; /* Derrière le texte */
+    font-family: 'Roboto Slab',serif;
+}
+
+#accueil div p {
+    text-align: justify;
+    justify-content: right;
+    margin-left: 20%;
+    margin-right: 40%;
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    color: white;
+}
