@@ -162,3 +162,29 @@ body {
     margin-right: 5%;
     box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.3);
 }
+
+.room-title {
+    margin-left: 5%;
+    font-weight: normal;
+    color: rgb(44, 43, 43);
+    font-size: 30px;
+}
+
+.sous-titre-room  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    color:  rgb(108, 105, 105);
+}
+
+.sous-titre-room::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 4px;
+    background-color: rgb(193, 176, 134);
+    position: relative;
+    top: -30px;
+}
