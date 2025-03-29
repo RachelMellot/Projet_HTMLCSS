@@ -127,3 +127,29 @@ body {
     box-shadow: 8px 8px 15px black;
     z-index: 1;
 }
+
+.about-textes {
+    width: 50%;
+}
+
+.about-textes h3 {
+    font-weight: 400;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.texte1 {
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 20%;
+}
+
+.texte2 {
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+
