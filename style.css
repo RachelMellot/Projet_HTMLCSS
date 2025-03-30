@@ -100,3 +100,19 @@ body {
     gap: 1vw;
 }
 
+/* Contenu à gauche */
+.restaurant-left img {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.restaurant-left {
+    width: 30vw; 
+    overflow: hidden; /* Cache ce qui dépasse */
+    height: 70vh;
+    border: 3px solid rgb(193, 176, 134);
+    border-radius: 25px;
+}
