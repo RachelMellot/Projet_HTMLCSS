@@ -396,3 +396,173 @@ body {
     position: relative;
     top: -30px;
 }
+
+}
+
+/* Section Restaurant */
+
+#restaurant {
+    padding-top: 0;
+    margin-top: 0;
+    position: relative; 
+    clear: both; /* Évite que la section se superpose à l'accueil */
+    margin-top: 1vh;
+    padding-top: 1vh;
+}
+
+.resto {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 70vh;
+    margin: 0 auto;
+    gap: 1vw;
+}
+
+/* Contenu à gauche */
+.restaurant-left img {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.restaurant-left {
+    width: 30vw; 
+    overflow: hidden; /* Cache ce qui dépasse */
+    height: 70vh;
+    border: 3px solid rgb(193, 176, 134);
+    border-radius: 25px;
+}
+
+/* Contenu à droite */
+.restaurant-right {
+    height: 70vh;
+    width: 60vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Titre, texte et bouton */
+.restaurant-info {
+    text-align: left;
+    position: relative;
+}
+
+.restaurant-info h2  {
+    font-size: 30px;
+    color: rgb(44, 43, 43);
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.sous-titre-rest::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: rgb(193, 176, 134);
+}
+
+.restaurant-info p{
+    font-size: 12px;
+    margin-bottom: 5vh;
+}
+
+.restaurant-info a {
+    position: absolute;
+    top: 5vh;
+    right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    gap: 15px;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: rgb(193, 176, 134);
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Les plats */
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap : 1vw;
+}
+
+.dish {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid rgb(193, 176, 134);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+    height: 25vh;
+}
+
+.dish img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay : caché par défaut */
+.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /*top: 100%;*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* bottom 2s ease-in-out;*/
+    transform: translateY(100%); /* Déplacement initial */
+}
+/* Texte overlay */
+.overlay h3, .overlay p {
+    color: white;
+    background-color: rgb(193, 176, 134,0.7);
+    width: 80%;
+    padding: 10px;
+}
+
+.overlay h3 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.overlay p {
+    border-radius: 15px;
+    font-size: 13px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Effet au survol */
+.dish:hover .overlay {
+    bottom: 0; /*top*/
+    opacity: 1;
+    transform: translateY(0); /* Remonte progressivement */
+}
