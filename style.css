@@ -78,3 +78,31 @@ body {
     font-size: 12px;
     color: white;
 }
+
+/* Section Gallery */
+
+#gallery {
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.sous-titre-gallery  {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    margin-left: 10%;
+    text-align: left;
+    color:  rgb(51, 51, 51);
+    gap: 10px;
+}
+
+.sous-titre-gallery::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(193, 176, 134);
+}
