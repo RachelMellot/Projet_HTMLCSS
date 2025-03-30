@@ -116,3 +116,14 @@ body {
     border: 3px solid rgb(193, 176, 134);
     border-radius: 25px;
 }
+
+/* Contenu à droite */
+.restaurant-right {
+    height: 70vh;
+    width: 60vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
