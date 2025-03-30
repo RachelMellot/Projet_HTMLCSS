@@ -16,18 +16,18 @@ body {
     background: url(images/home1.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
-    padding: 10px;
+    padding:1vh;
 }
 
 #accueil header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 1vh 5vw;
 }
 
 .logo img {
-    height: 30px;
+    height: 3vh;
 }
 #accueil header nav{
     display: flex;
@@ -40,6 +40,7 @@ body {
     text-align: center;
     width: 60%;
     color: white;
+    font-size: 0.8vw;
 }
 #accueil header nav a:hover {
     color: #c1b086; 
@@ -48,23 +49,23 @@ body {
 
 #accueil h1 {
     position: relative;
-    margin-left: 15%;
-    margin-top: 15%;
-    padding: 20px;
+    margin-left: 15vw;
+    margin-top: 35vh;
+    padding: 2vh;
     font-family: 'Roboto Slab',serif;
-    font-size: 350%;
+    font-size: 3vw;
     font-style: normal;
     color: white;
     z-index: 1;
 }
 
 #accueil div h1::after {
-    content: "H"; /* Lettre en arrière-plan */
+    content: "H"; 
     position: absolute;
-    transform: translate(-46vh, -30vh); /* Centrage */
-    font-size: 50vh; /* Taille de la lettre */
+    transform: translate(-46vh, -30vh);
+    font-size: 50vh; 
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.2); /* Blanc transparent */
+    color: rgba(255, 255, 255, 0.2); 
     z-index: 0; /* Derrière le texte */
     font-family: 'Roboto Slab',serif;
 }
@@ -72,10 +73,10 @@ body {
 #accueil div p {
     text-align: justify;
     justify-content: right;
-    margin-left: 20%;
-    margin-right: 40%;
+    margin-left: 22vw;
+    margin-right: 40vw;
     font-family: 'Roboto Slab';
-    font-size: 12px;
+    font-size: 0.7vw;
     color: white;
 }
 
@@ -190,3 +191,97 @@ body {
     left: 0;
 } 
 
+
+
+/* Section Amenities */
+
+#amenities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw; 
+    position: relative;
+}
+
+.background-con {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: url('images/ami.jpg') no-repeat center center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 0.2vw solid rgb(193, 176, 134);
+}
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    width: 40vw; 
+    background: rgba(63, 156, 193, 0.7);
+    color: white;
+    padding: 2vw;
+    border-radius: 2vw;
+    border: 0.2vw solid rgb(193, 176, 134);
+    box-shadow: 0.2vw 1.5vw 2vw rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    opacity: 0.3;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 40%;
+}
+
+.overlay-text:hover {
+    opacity: 1;
+    background-color: rgba(63, 156, 193, 0.8);
+}
+
+.sous-titre-amt {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.texte-amt {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#amenties span {
+    margin-right: 1vw;
+}
+
+.background-con nav {
+    position: absolute;
+    bottom: -30vh; 
+    right: 3vw; 
+}
+
+.background-con nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(193, 176, 134);
+    border: 0.1vw solid white;
+    padding: 0.5vw 1vw;
+    border-radius: 3vw;
+    box-shadow: 0.2vw 1.5vw 2vw rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+}
