@@ -173,3 +173,28 @@ body {
     background-color: rgb(193, 176, 134);
     box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Les plats */
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap : 1vw;
+}
+
+.dish {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid rgb(193, 176, 134);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+    height: 25vh;
+}
+
+.dish img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
