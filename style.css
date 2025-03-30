@@ -127,3 +127,49 @@ body {
     justify-content: flex-start;
 }
 
+/* Titre, texte et bouton */
+.restaurant-info {
+    text-align: left;
+    position: relative;
+}
+
+.restaurant-info h2  {
+    font-size: 30px;
+    color: rgb(44, 43, 43);
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.sous-titre-rest::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: rgb(193, 176, 134);
+}
+
+.restaurant-info p{
+    font-size: 12px;
+    margin-bottom: 5vh;
+}
+
+.restaurant-info a {
+    position: absolute;
+    top: 5vh;
+    right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    gap: 15px;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: rgb(193, 176, 134);
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.3);
+}
