@@ -7,7 +7,7 @@ body {
     height: 100%;
     font-family: 'Roboto Slab', serif;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Section Accueil */
