@@ -565,3 +565,123 @@ body {
     opacity: 1;
     transform: translateY(0); /* Remonte progressivement */
 }
+
+}
+
+/* Section Gallery */
+
+#gallery {
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.sous-titre-gallery  {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    margin-left: 10%;
+    text-align: left;
+    color:  rgb(51, 51, 51);
+    gap: 10px;
+}
+
+.sous-titre-gallery::before {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(193, 176, 134);
+}
+
+.header-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 10%; 
+}
+
+.titre-gallery {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.header-gallery a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 20%;
+    color: white;
+    border: 3px solid white;
+    background-color: rgb(193, 176, 134);
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.gallery-display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    flex-grow: 1;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+/* Style de base pour toutes les images */
+.gallery-item {
+    height: auto;
+    border: 3px solid rgb(193, 176, 134);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 10%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lorsque l'un des inputs est sélectionné, l'image associée devient plus grande */
+#img1:checked ~ .gallery-display label[for="img1"],
+#img2:checked ~ .gallery-display label[for="img2"],
+#img3:checked ~ .gallery-display label[for="img3"],
+#img4:checked ~ .gallery-display label[for="img4"],
+#img5:checked ~ .gallery-display label[for="img5"],
+#img6:checked ~ .gallery-display label[for="img6"],
+#img7:checked ~ .gallery-display label[for="img7"],
+#img8:checked ~ .gallery-display label[for="img8"] {
+    width: 55%;
+}
+
+/* Les autres images deviennent plus petites */
+#img1:checked ~ .gallery-display label:not([for="img1"]),
+#img2:checked ~ .gallery-display label:not([for="img2"]),
+#img3:checked ~ .gallery-display label:not([for="img3"]),
+#img4:checked ~ .gallery-display label:not([for="img4"]),
+#img5:checked ~ .gallery-display label:not([for="img5"]),
+#img6:checked ~ .gallery-display label:not([for="img6"]),
+#img7:checked ~ .gallery-display label:not([for="img7"]),
+#img8:checked ~ .gallery-display label:not([for="img8"]) {
+    width: 3%;
+    filter: blur(1px);
+    border-radius: 50px;
+}
