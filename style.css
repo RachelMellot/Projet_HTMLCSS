@@ -106,3 +106,16 @@ body {
     height: 4px;
     background-color: rgb(193, 176, 134);
 }
+
+.header-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 10%; 
+}
+
+.titre-gallery {
+    font-size: 30px;
+    font-weight: normal;
+}
